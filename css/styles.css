@@ -1,0 +1,209 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    background-color: navajowhite;
+    color: black;
+    border: none;
+}
+
+body {
+	font-size: 2.5em;
+	font-family: 'Hammersmith One', sans-serif;
+    background-color: navajowhite;
+}
+
+.navbar-toggle {
+    background-color: wheat;
+    float: right;
+}
+
+.navbar-toggle:hover {
+    box-shadow: 1px 1px 1px black;
+    background-color: antiquewhite !important;
+}
+
+.navbar-brand {
+	height: auto;
+	padding: 0px;
+    background-color: navajowhite;
+}
+
+.navbar-brand h1 {
+    color: darkgoldenrod !important;
+}
+
+#header-nav {
+    background-color: navajowhite;
+    border: none;
+}	
+
+#brandname {
+	padding: 10px;
+	font-size: 1.75em;
+	color: black;
+	font-weight: bold;
+    height: 0px;
+    width: auto;
+    margin-top: 0px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbar-header a:hover {
+ 	text-decoration: none;
+}
+
+#nav-list a {
+    clear: both;
+    border: 1px solid black;
+    float: right;
+    position: relative;
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    Background-color: wheat;
+	color: black;
+	font-size: 1em;
+}
+
+#nav-list a:hover {
+    color: darkgoldenrod;
+    text-shadow: 1px 1px 1px black;
+    background-color: antiquewhite;
+}
+
+#collapsable-nav {
+    background-color: navajowhite;
+    border: none;
+}
+
+#header-nav .navbar-header button.navbar-toggle {
+    clear: both;
+    bottom: 12px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid black;
+}
+
+#main-content .section-item {
+	margin: 15px;
+	height: auto;
+    background-color: wheat;
+    border: 1px solid black;
+}
+
+#page-title {
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+    background-color: navajowhite;
+}
+
+#chicken, #beef, #sushi {
+	font-size: 1em;
+    text-shadow: 1px 1px 1px black;
+	color: darkgoldenrod;
+}
+
+p {
+	font-size: .6em;
+	padding: 15px;
+    background-color: wheat;
+    text-shadow: none;
+}
+
+#main-content {
+	margin: auto;
+	padding: 0px 0px 2px 0px;
+}
+
+#main-content h3 {
+background-color: wheat;
+    
+}
+
+/****************** Media queries******************/
+
+
+/********** Large devices only **********/
+
+
+/********** Medium devices only (md) **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only (sm) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** XSmall devices only (xs) **********/
+@media (max-width: 767px) {
+	/*navbar header*/
+	#header-h1 { /* Logo name */
+	    padding: 10px;
+	    font-size: 5vw; /* 1vw = 1% of viewport width */
+	}
+
+	/*navbar toogle*/
+	#header-nav .navbar-header button.navbar-toggle {
+    	margin-top: -15px;
+    }	
+	#collapsable-nav {
+		background-color: none;
+	}
+
+	/*main content*/
+	#page-title {
+		font-size: 1em;
+	}
+	#chicken, #beef, #sushi {
+		font-size: 1em;
+        
+	}
+	p {
+		font-size: .6em;
+		padding: 12px;
+	}
+	#main-content .section-item {
+		margin: 25px;
+	}
+}
+
+/********** Super extra small devices only (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+	/*navbar header*/
+	#header-h1 { /* Logo name */
+	    padding: 5px;
+	    font-size: 6.5vw; /* 1vw = 1% of viewport width */
+	}
+    
+	/*navbar toogle & list*/
+	#collapsable-nav {
+	}
+    
+	#header-nav .navbar-header button.navbar-toggle {
+    	margin-top: -10px;
+    }	
+	#nav-list a {
+		font-size: 1em;
+	}
+
+	/*main content*/
+	#page-title {
+		font-size: 1em;
+	}
+	#chicken, #beef, #sushi {
+		font-size: 1em;
+	}
+	p {
+		font-size: 0.6em;
+		padding: 10px;
+	}
+	#main-content .section-item {
+		margin: 25px;
+	}
+}
